@@ -1,0 +1,29 @@
+﻿@page "/GetAll"
+@using dataAccess.Entities
+<h3>GetAll</h3>
+<Alert></Alert>
+@if (persons.Any())
+{
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>LastName</th>
+            <th>FirstName</th>
+            <th>Date of birth</th>
+            <th>gender</th>
+            <th></th>
+        </tr>
+        @foreach (Person person in persons)
+        {
+            <tr>
+                <td>@person.Id</td>
+                <td>@person.Lastname</td>
+                <td>@person.Firstname</td>
+                <td>@person.DateOfBirth</td>
+                <td>@GetGender(person.IsMan)</td>
+                <td><button @onclick="() => GoTo((int)person.Id)"><i class="fa fa-search">Update</i></button></td>
+                <td><button @onclick="() => DeletePerson((int)person.Id)"><i class="fa fa-search">Delete</i></button></td>
+            </tr>
+        }
+    </table>
+}

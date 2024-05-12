@@ -1,0 +1,27 @@
+﻿@page "/Create"
+<h3>Create</h3>
+<EditForm Model="person" OnSubmit="() => PostData()" FormName="Person">
+    <div>
+        LastName:
+        <InputText @bind-Value="person.Lastname"/>
+    </div>
+    <div>
+        FirstName:
+        <InputText @bind-Value="person.Firstname"/>
+    </div>
+    <div>
+        Date of birth:
+        <InputDate @bind-Value="person.DateOfBirth"/>
+    </div>
+    <div>
+        <input type="radio" checked="@(!person.IsMan)"
+               name="Gender" @onchange="@(() => person.IsMan = false)"/>
+        <label>Female</label>
+        
+        <input type="radio" checked="@person.IsMan" 
+               name="Gender" @onchange="@(() => person.IsMan = true)"/>
+        <label>Male</label>
+
+    </div>
+    <button type="submit">Submit</button>
+</EditForm>

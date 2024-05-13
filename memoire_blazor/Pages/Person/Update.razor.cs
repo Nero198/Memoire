@@ -30,6 +30,6 @@ public partial class Update : ComponentBase
             string errorMessage = await response.Content.ReadAsStringAsync();
             toastService.ShowError(errorMessage);
         }
-        toastService.ShowSuccess("Person sucessfully created");
+        toastService.ShowSuccess("Person sucessfully updated");
     }
 }

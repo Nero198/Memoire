@@ -1,10 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "memoire_api", "memoire_api\memoire_api.csproj", "{525C7A8C-C659-45B4-A07E-9ED442E6388F}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "memoire_api", "memoire_api\memoire_api.csproj", "{525C7A8C-C659-45B4-A07E-9ED442E6388F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataAccess", "dataAccess\dataAccess.csproj", "{B1823851-68DE-4244-8E61-F71FCD6B12A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataAccess", "dataAccess\dataAccess.csproj", "{B1823851-68DE-4244-8E61-F71FCD6B12A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "memoire_blazor", "memoire_blazor\memoire_blazor.csproj", "{C3D80F34-EF2A-49E2-9D7A-C611F5C6A116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "memoire_blazor", "memoire_blazor\memoire_blazor.csproj", "{C3D80F34-EF2A-49E2-9D7A-C611F5C6A116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +27,11 @@ Global
 		{C3D80F34-EF2A-49E2-9D7A-C611F5C6A116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3D80F34-EF2A-49E2-9D7A-C611F5C6A116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3D80F34-EF2A-49E2-9D7A-C611F5C6A116}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D7B6BD6-0D41-4C7B-AA40-5863363221F6}
 	EndGlobalSection
 EndGlobal

@@ -13,51 +13,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = memoire_blazor
 build_property.RootNamespace = memoire_blazor
-build_property.ProjectDir = C:\POC\Memoire\memoire_blazor\
+build_property.ProjectDir = C:\Users\Nero\Desktop\Memoire\Memoire\memoire_blazor\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\POC\Memoire\memoire_blazor
+build_property.MSBuildProjectDirectory = C:\Users\Nero\Desktop\Memoire\Memoire\memoire_blazor
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/POC/Memoire/memoire_blazor/App.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/POC/Memoire/memoire_blazor/Pages/Counter.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Book/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Book/GetAll.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xHZXRBbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Book/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xVcGRhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/POC/Memoire/memoire_blazor/Pages/Home.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/POC/Memoire/memoire_blazor/Pages/Person/Create.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Person/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/POC/Memoire/memoire_blazor/Pages/Person/GetAll.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Person/GetAll.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uXEdldEFsbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/POC/Memoire/memoire_blazor/Pages/Person/Update.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Person/Update.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uXFVwZGF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/POC/Memoire/memoire_blazor/Pages/Weather.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/PublishingHouse/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHVibGlzaGluZ0hvdXNlXENyZWF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/PublishingHouse/GetAll.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHVibGlzaGluZ0hvdXNlXEdldEFsbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/PublishingHouse/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHVibGlzaGluZ0hvdXNlXFVwZGF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Type/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVxDcmVhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Type/GetAll.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVxHZXRBbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Type/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVxVcGRhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/POC/Memoire/memoire_blazor/_Imports.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/POC/Memoire/memoire_blazor/Layout/MainLayout.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-a50fgnry4n
 
-[C:/POC/Memoire/memoire_blazor/Layout/NavMenu.razor]
+[C:/Users/Nero/Desktop/Memoire/Memoire/memoire_blazor/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-p845ohl1a1

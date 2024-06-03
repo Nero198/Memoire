@@ -1,0 +1,27 @@
+﻿@page "/publishingHouse/GetAll"
+@using dataAccess.Entities
+<h3>GetAll</h3>
+<Alert></Alert>
+@if (PublishingHouses.Any())
+{
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>LastName</th>
+            <th>FirstName</th>
+            <th>Date of birth</th>
+            <th>gender</th>
+            <th></th>
+        </tr>
+        @foreach (PublishingHouse publishingHouse in PublishingHouses)
+        {
+            <tr>
+                <td>@publishingHouse.Id</td>
+                <td>@publishingHouse.Name</td>
+                <td>@publishingHouse.StartYear</td>
+                <td><button @onclick="() => GoTo((int)publishingHouse.Id)"><i class="fa fa-search">Update</i></button></td>
+                <td><button @onclick="() => DeletePerson((int)publishingHouse.Id)"><i class="fa fa-search">Delete</i></button></td>
+            </tr>
+        }
+    </table>
+}

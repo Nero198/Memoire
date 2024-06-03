@@ -1,0 +1,34 @@
+﻿@page "/PublishingHouse/Update/{Id:int}"
+@using memoire_razor.Pages.Person
+@model UpdatePublishingHouseModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update Person</title>
+</head>
+<body>
+    <h1>Update Person</h1>
+
+    <form method="post">
+        <input hidden="hidden" asp-for="PublishingHouse.Id" />
+        <div>
+            <label asp-for="PublishingHouse.Name"></label>
+            <input asp-for="PublishingHouse.Name" />
+            <span asp-validation-for="PublishingHouse.Name"></span>
+        </div>
+        <div>
+            <label asp-for="PublishingHouse.StartYear"></label>
+            <input type="number" asp-for="PublishingHouse.StartYear" />
+            <span asp-validation-for="PublishingHouse.StartYear"></span>
+        </div>
+        <button type="submit">Update</button>
+    </form>
+
+    <div>
+        <a asp-page="/Index">Back to List</a>
+    </div>
+
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

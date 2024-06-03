@@ -34,7 +34,7 @@ public partial class GetAll : ComponentBase
             toastService.ShowError(errorMessage);
         }
         persons = await _client.GetFromJsonAsync<dataAccess.Entities.Person[]>("api/person") ?? [];
-        toastService.ShowSuccess("Person sucessfully created");
+        toastService.ShowSuccess("Person sucessfully deleted");
     }
     private string GetGender(bool isMan)
     {

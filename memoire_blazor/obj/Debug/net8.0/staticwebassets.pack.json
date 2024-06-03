@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\obj\\Debug\\net8.0\\compressed\\pbha9en1b8.gz",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\obj\\Debug\\net8.0\\compressed\\4280c62c10.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\memoire_blazor.styles.css",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\memoire_blazor.styles.css",
       "PackagePath": "staticwebassets\\memoire_blazor.styles.css"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\bland\\RiderProjects\\API_memoire\\memoire_blazor\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_blazor\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

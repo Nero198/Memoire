@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Funky HTML Page</title>
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+</head>
+<body>
+<article>
+	<body hx-get="https://localhost:7009/api/book" hx-trigger="load" hx-target="#bookTableBody">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>ReleaseYear</th>
+                <th>Publishing House</th>
+                <th>Author</th>
+                <th>Type</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="bookTableBody"></tbody>
+    </table>
+
+    <script>
+        document.addEventListener('htmx:afterOnLoad', function(event) {
+		
+            Promise.all([
+                fetch('https://localhost:7009/api/publishinghouse').then(res => res.json()),
+                fetch('https://localhost:7009/api/person').then(res => res.json()),
+                fetch('https://localhost:7009/api/type').then(res => res.json()),
+            ]).then(([publishingHouses, persons, types]) => {
+                // Store lookup data
+                const publishingHouseMap = Object.fromEntries(publishingHouses.map(ph => [ph.id, ph.name]));
+                const personMap = Object.fromEntries(persons.map(p => [p.id, p.lastname]));
+                const typeMap = Object.fromEntries(types.map(t => [t.id, t.label]));
+            const response = event.detail.xhr.responseText;
+            const data = JSON.parse(response);
+
+            const tableBody = document.getElementById('bookTableBody');
+            tableBody.innerHTML = '';
+
+            data.forEach(book => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${book.id}</td>
+                    <td>${book.title}</td>
+                    <td>${book.releaseYear}</td>
+                    <td>${publishingHouseMap[book.publishingHouseId]}</td>
+                    <td>${personMap[book.personId]}</td>
+                    <td>${typeMap[book.typeId]}</td>
+                    <td>
+                        <button class="delete-btn" data-id="${book.id}">Supprimer</button>
+                        <button onclick="location.href='Update.html?id=${book.id}'">Mettre à jour</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+
+				document.querySelectorAll('.delete-btn').forEach(button => {
+				
+					button.addEventListener('click', function() {
+						console.log("here")
+						const bookId = this.getAttribute('data-id');
+						if (confirm("Êtes-vous sûr de vouloir supprimer cet enregistrement ?")) {
+							fetch(`https://localhost:7009/api/book/${bookId}`, {
+								method: 'DELETE'
+							}).then(response => {
+								if (response.ok) {
+									this.closest('tr').remove();
+								} else {
+									alert('Erreur lors de la suppression de la bookne.');
+								}
+							}).catch(error => {
+								console.error('Erreur:', error);
+								alert('Erreur lors de la suppression de la bookne.');
+							});
+						}
+					});
+				});
+			});
+        });
+    </script>
+</body>
+</article>
+
+</body>
+</html>

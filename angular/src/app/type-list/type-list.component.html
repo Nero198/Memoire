@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>List of Type</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Label</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let type of types">
+        <td>{{ type.id }}</td>
+        <td>{{ type.label }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteType(type.id)">Delete</button>
+          <a [routerLink]="['/type/update', type.id]" class="btn btn-primary">Update</a>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

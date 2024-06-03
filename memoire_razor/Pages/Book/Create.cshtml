@@ -1,0 +1,68 @@
+﻿@page "/Book/Create"
+@using memoire_razor.Pages.Person
+@model CreateBookModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Publishing house</title>
+</head>
+<body>
+    <h1>Create Person</h1>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @if (TempData["isSucess"] != null && (bool)TempData["isSucess"] == true)
+            {
+                <div class="alert alert-success" role="alert">
+                    @Html.Raw(@TempData["response"])
+                </div>
+            }
+            else if(TempData["isSucess"] != null && (bool)TempData["isSucess"] == false)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @Html.Raw(@TempData["response"])
+                </div>
+            }
+        </main>
+    </div>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Book.Title" class="control-label"></label>
+            <input asp-for="Book.Title" class="form-control" />
+            <span asp-validation-for="Book.Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Book.PublishingHouseId" class="control-label"></label>
+            <select asp-for="Book.PublishingHouseId" class="form-control" asp-items="Model.PublishingHouses"></select>
+            <span asp-validation-for="Book.PublishingHouseId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Book.PersonId" class="control-label"></label>
+            <select asp-for="Book.PersonId" class="form-control" asp-items="Model.Persons"></select>
+            <span asp-validation-for="Book.PersonId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Book.TypeId" class="control-label"></label>
+            <select asp-for="Book.TypeId" class="form-control" asp-items="Model.Types"></select>
+            <span asp-validation-for="Book.TypeId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Book.ReleaseYear" class="control-label"></label>
+            <input asp-for="Book.ReleaseYear" class="form-control" />
+            <span asp-validation-for="Book.ReleaseYear" class="text-danger"></span>
+        </div>
+        <button type="submit">Create</button>
+    </form>
+
+    <div>
+        <a asp-page="/Index">Back to List</a>
+    </div>
+
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

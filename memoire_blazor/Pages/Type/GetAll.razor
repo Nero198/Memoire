@@ -1,0 +1,23 @@
+﻿@page "/Type/GetAll"
+@using dataAccess.Entities
+<h3>GetAll</h3>
+<Alert></Alert>
+@if (types.Any())
+{
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Label</th>
+            <th></th>
+        </tr>
+        @foreach (dataAccess.Entities.Type type in types)
+        {
+            <tr>
+                <td>@type.Id</td>
+                <td>@type.Label</td>
+                <td><button @onclick="() => GoTo((int)type.Id)"><i class="fa fa-search">Update</i></button></td>
+                <td><button @onclick="() => DeleteType((int)type.Id)"><i class="fa fa-search">Delete</i></button></td>
+            </tr>
+        }
+    </table>
+}

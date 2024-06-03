@@ -34,5 +34,10 @@ public class PersonConfiguration : IEntityTypeConfiguration<Person>
             .HasColumnName("is_man")
             .HasColumnType("bit")
             .IsRequired();
+
+        builder.HasMany(x => x.Books)
+            .WithOne(x => x.Person)
+            .HasForeignKey(x => x.PersonId)
+            .IsRequired();
     }
 }

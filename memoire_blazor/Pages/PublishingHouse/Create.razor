@@ -1,0 +1,13 @@
+﻿@page "/PublishingHouse/Create"
+<h3>Create Publishing House</h3>
+<EditForm Model="publishingHouse" OnSubmit="() => PostData()" FormName="PublishinHouse">
+    <div>
+        Name:
+        <InputText @bind-Value="publishingHouse.Name" />
+    </div>
+    <div>
+        Start Year:
+        <InputNumber @bind-Value="publishingHouse.StartYear" />
+    </div>
+    <button type="submit">Submit</button>
+</EditForm>

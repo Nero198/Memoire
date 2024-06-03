@@ -1,0 +1,32 @@
+﻿@page
+@model GetAllModel
+    <table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <th>Lastname</th>
+            <th>Firstname</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model.Persons)
+        {
+            <tr>
+                <td>@person.Id</td>
+                <td>@person.Lastname</td>
+                <td>@person.Firstname</td>
+                <td>@person.DateOfBirth.ToShortDateString()</td>
+                <td>@(person.IsMan ? "Male" : "Female")</td>
+                <td>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@person.Id">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <button><a asp-page="/Update" asp-route-id="@person.Id">Update</a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

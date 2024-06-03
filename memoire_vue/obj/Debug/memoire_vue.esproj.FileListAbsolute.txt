@@ -1,0 +1,2 @@
+C:\POC\Memoire\memoire_vue\obj\Debug\memoire_vue.esproj.CoreCompileInputs.cache
+C:\Users\Nero\Desktop\Memoire\Memoire\memoire_vue\obj\Debug\memoire_vue.esproj.CoreCompileInputs.cache

@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Create a Book</h2>
+  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">title</label>
+      <input id="title" type="text" formControlName="title" class="form-control" />
+
+    </div>
+
+    <div class="form-group">
+      <label for="releaseYear">release year</label>
+      <input id="releaseYear" type="number" formControlName="releaseYear" class="form-control" />
+    </div>
+    <div>
+      <label for="publishingHouseId">Publishing House:</label>
+      <select id="publishingHouseId" formControlName="publishingHouseId">
+        <option *ngFor="let house of publishingHouses" [value]="house.id">{{ house.name }}</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="personId">Person:</label>
+      <select id="personId" formControlName="personId">
+        <option *ngFor="let person of persons" [value]="person.id">{{ person.lastname}}{{ person.firstname}}</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="typeId">Type:</label>
+      <select id="typeId" formControlName="typeId">
+        <option *ngFor="let type of types" [value]="type.id">{{ type.label }}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

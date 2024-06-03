@@ -1,0 +1,34 @@
+﻿@page "/Book/GetAll"
+@using memoire_razor.Pages.Person
+@model GetAllBookModel
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Publishing House</th>
+            <th>Person</th>
+            <th>Type</th>
+            <th>Release Year</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model.Books)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@Model.PublishingHouses.FirstOrDefault(x => x.Id == book.PublishingHouseId)?.Name</td>
+                <td>@Model.Persons.FirstOrDefault(x => x.Id == book.PersonId)?.Lastname</td>
+                <td>@Model.Types.FirstOrDefault(x => x.Id == book.TypeId)?.Label</td>
+                <td>@book.ReleaseYear</td>
+                <td>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@book.Id">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <button><a asp-page="/book/Update" asp-route-id="@book.Id">Update</a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

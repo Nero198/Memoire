@@ -1,0 +1,13 @@
+﻿@page "/Type/Update/{Id:int}"
+<h3>Get</h3>
+@if (type is not null)
+{
+    <EditForm Model="type" OnSubmit="() => UpdateType()" FormName="Type">
+        <div>
+            Label:
+            <InputText @bind-Value="type.Label" />
+        </div>
+        <input type="submit" value="Update"/>
+    </EditForm>
+}
+

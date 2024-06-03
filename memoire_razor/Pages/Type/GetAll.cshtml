@@ -1,0 +1,28 @@
+﻿@page "/Type/GetAll"
+@using memoire_razor.Pages.Person
+@model GetAllTypeModel
+    <table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <th>Label</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var type in Model.Types)
+        {
+            <tr>
+                <td>@type.Id</td>
+                <td>@type.Label</td>
+                <td>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@type.Id">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <button><a asp-page="/Type/Update" asp-route-id="@type.Id">Update</a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

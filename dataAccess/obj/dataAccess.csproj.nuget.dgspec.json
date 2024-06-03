@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\POC\\Memoire\\dataAccess\\dataAccess.csproj": {}
+    "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\dataAccess\\dataAccess.csproj": {}
   },
   "projects": {
-    "C:\\POC\\Memoire\\dataAccess\\dataAccess.csproj": {
+    "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\dataAccess\\dataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\POC\\Memoire\\dataAccess\\dataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\dataAccess\\dataAccess.csproj",
         "projectName": "dataAccess",
-        "projectPath": "C:\\POC\\Memoire\\dataAccess\\dataAccess.csproj",
-        "packagesPath": "C:\\Users\\FLV00\\.nuget\\packages\\",
-        "outputPath": "C:\\POC\\Memoire\\dataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\dataAccess\\dataAccess.csproj",
+        "packagesPath": "C:\\Users\\Nero\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\dataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\FLV00\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,9 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://azdevops.aviq.be/AVIQ/_packaging/NuGet_AviqAD/nuget/v3/index.json": {},
-          "https://azdevops.aviq.be/AVIQ/_packaging/Nuget_AVIQ_NETFramework/nuget/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -36,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -67,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

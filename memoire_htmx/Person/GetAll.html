@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Funky HTML Page</title>
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+</head>
+<body>
+<article>
+	<body hx-get="https://localhost:7009/api/person" hx-trigger="load" hx-target="#personTableBody">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Lastname</th>
+                <th>Firstname</th>
+                <th>DateOfBirth</th>
+                <th>Gender</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="personTableBody"></tbody>
+    </table>
+
+    <script>
+        document.addEventListener('htmx:afterOnLoad', function(event) {
+            const response = event.detail.xhr.responseText;
+            const data = JSON.parse(response);
+
+            const tableBody = document.getElementById('personTableBody');
+            tableBody.innerHTML = '';
+
+            data.forEach(person => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${person.id}</td>
+                    <td>${person.lastname}</td>
+                    <td>${person.firstname}</td>
+                    <td>${new Date(person.dateOfBirth).toLocaleDateString()}</td>
+                    <td>${person.isMan ? 'Homme' : 'Femme'}</td>
+                    <td>
+                        <button class="delete-btn" data-id="${person.id}">Supprimer</button>
+                        <button onclick="location.href='Update.html?id=${person.id}'">Mettre à jour</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+
+            document.querySelectorAll('.delete-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const personId = this.getAttribute('data-id');
+                    if (confirm("Êtes-vous sûr de vouloir supprimer cet enregistrement ?")) {
+                        fetch(`https://localhost:7009/api/person/${personId}`, {
+                            method: 'DELETE'
+                        }).then(response => {
+                            if (response.ok) {
+                                this.closest('tr').remove();
+                            } else {
+                                alert('Erreur lors de la suppression de la personne.');
+                            }
+                        }).catch(error => {
+                            console.error('Erreur:', error);
+                            alert('Erreur lors de la suppression de la personne.');
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</article>
+
+</body>
+</html>

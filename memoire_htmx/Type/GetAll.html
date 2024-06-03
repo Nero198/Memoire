@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Funky HTML Page</title>
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+</head>
+<body>
+<article>
+	<body hx-get="https://localhost:7009/api/type" hx-trigger="load" hx-target="#typeTableBody">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Label</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="typeTableBody"></tbody>
+    </table>
+
+    <script>
+        document.addEventListener('htmx:afterOnLoad', function(event) {
+            const response = event.detail.xhr.responseText;
+            const data = JSON.parse(response);
+
+            const tableBody = document.getElementById('typeTableBody');
+            tableBody.innerHTML = '';
+
+            data.forEach(type => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${type.id}</td>
+                    <td>${type.label}</td>
+                    <td>
+                        <button class="delete-btn" data-id="${type.id}">Supprimer</button>
+                        <button onclick="location.href='Update.html?id=${type.id}'">Mettre à jour</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+
+            document.querySelectorAll('.delete-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const typeId = this.getAttribute('data-id');
+                    if (confirm("Êtes-vous sûr de vouloir supprimer cet enregistrement ?")) {
+                        fetch(`https://localhost:7009/api/type/${typeId}`, {
+                            method: 'DELETE'
+                        }).then(response => {
+                            if (response.ok) {
+                                this.closest('tr').remove();
+                            } else {
+                                alert('Erreur lors de la suppression de la typene.');
+                            }
+                        }).catch(error => {
+                            console.error('Erreur:', error);
+                            alert('Erreur lors de la suppression de la typene.');
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</article>
+
+</body>
+</html>

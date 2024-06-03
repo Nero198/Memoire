@@ -1,0 +1,17 @@
+﻿@page "/publishingHouse/Update/{Id:int}"
+<h3>Get</h3>
+@if (publishingHouse is not null)
+{
+    <EditForm Model="publishingHouse" OnSubmit="() => UpdatePublishingHouse()" FormName="PublishingHouse">
+        <div>
+            Name:
+            <InputText @bind-Value="publishingHouse.Name" />
+        </div>
+        <div>
+            Start year:
+            <InputNumber @bind-Value="publishingHouse.StartYear" />
+        </div>
+        <input type="submit" value="Update"/>
+    </EditForm>
+}
+

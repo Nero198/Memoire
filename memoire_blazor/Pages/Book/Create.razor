@@ -1,0 +1,53 @@
+﻿@page "/Book/Create"
+<h3>Create</h3>
+<EditForm Model="book" OnSubmit="() => PostData()" FormName="Book">
+    <div>
+        Title:
+        <InputText @bind-Value="book.Title" />
+    </div>
+    <div>
+        Release year:
+        <InputNumber @bind-Value="book.ReleaseYear" />
+    </div>
+    <div>
+        Publishing house:
+        <InputSelect id="publishingHouse" @bind-Value="book.PublishingHouseId" class="form-control">
+            <option value="">Select Publishing houses</option>
+            @if (publishingHouses is not null)
+            {
+                @foreach (var publishingHouse in publishingHouses)
+                {
+                    <option value="@publishingHouse.Id">@publishingHouse.Name</option>
+                }
+            }
+
+        </InputSelect>
+    </div>
+    <div>
+        Type:
+        <InputSelect id="type" @bind-Value="book.TypeId" class="form-control">
+            <option value="">Select Type</option>
+            @if (types is not null)
+            {
+                @foreach (var type in types)
+                {
+                    <option value="@type.Id">@type.Label</option>
+                }
+            }
+        </InputSelect>
+    </div>
+    <div>
+        Author:
+        <InputSelect id="person" @bind-Value="book.PersonId" class="form-control">
+            <option value="">Select Person</option>
+            @if (persons is not null)
+            {
+                @foreach (var person in persons)
+                {
+                    <option value="@person.Id">@person.Lastname @person.Firstname</option>
+                }
+            }
+        </InputSelect>
+    </div>
+    <input type="submit" value="Create" />
+</EditForm>

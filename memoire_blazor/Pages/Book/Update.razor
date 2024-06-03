@@ -1,0 +1,47 @@
+﻿@page "/Book/Update/{Id:int}"
+<h3>Get</h3>
+@if (book is not null)
+{
+    <EditForm Model="book" OnSubmit="() => UpdateBook()" FormName="Book">
+        <div>
+            Title:
+            <InputText @bind-Value="book.Title" />
+        </div>
+        <div>
+            Release year:
+            <InputNumber @bind-Value="book.ReleaseYear" />
+        </div>
+        <div>
+            Publishing house:
+            <InputSelect @bind-Value="book.PublishingHouseId" class="form-control">
+                <option value="">Select Publishing houses</option>
+                @foreach (var publishingHouse in publishingHouses)
+                {
+                    <option value="@publishingHouse.Id">@publishingHouse.Name</option>
+                }
+            </InputSelect>
+        </div>
+        <div>
+            Type:
+            <InputSelect @bind-Value="book.TypeId" class="form-control">
+                <option value="">Select Type</option>
+                @foreach (var type in types)
+                {
+                    <option value="@type.Id">@type.Label</option>
+                }
+            </InputSelect>
+        </div>
+        <div>
+            Author:
+            <InputSelect @bind-Value="book.PersonId" class="form-control">
+                <option value="">Select Author</option>
+                @foreach (var person in persons)
+                {
+                    <option value="@person.Id">@person.Lastname @person.Firstname</option>
+                }
+            </InputSelect>
+        </div>
+        <input type="submit" value="Update" />
+    </EditForm>
+}
+

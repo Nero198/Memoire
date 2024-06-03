@@ -1,0 +1,30 @@
+﻿@page "/PublishingHouse/GetAll"
+@using memoire_razor.Pages.Person
+@model GetAllPublishingHouseModel
+    <table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <th>Name</th>
+            <th>StartYear</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var PublishingHouse in Model.PublishingHouses)
+        {
+            <tr>
+                <td>@PublishingHouse.Id</td>
+                <td>@PublishingHouse.Name</td>
+                <td>@PublishingHouse.StartYear</td>
+                <td>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@PublishingHouse.Id">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <button><a asp-page="/PublishingHouse/Update" asp-route-id="@PublishingHouse.Id">Update</a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

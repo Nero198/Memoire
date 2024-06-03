@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "memoire_razor/1.0.0": {
+        "runtime": {
+          "memoire_razor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "memoire_razor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

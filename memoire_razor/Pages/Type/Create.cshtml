@@ -1,0 +1,44 @@
+﻿@page "/Type/Create"
+@using memoire_razor.Pages.Person
+@model CreateTypeModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Type</title>
+</head>
+<body>
+    <h1>Create Person</h1>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @if (TempData["isSucess"] != null && (bool)TempData["isSucess"] == true)
+            {
+                <div class="alert alert-success" role="alert">
+                    @Html.Raw(@TempData["response"])
+                </div>
+            }
+            else if(TempData["isSucess"] != null && (bool)TempData["isSucess"] == false)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @Html.Raw(@TempData["response"])
+                </div>
+            }
+        </main>
+    </div>
+    <form method="post">
+        <div>
+            <label asp-for="Type.Label"></label>
+            <input asp-for="Type.Label" />
+            <span asp-validation-for="Type.Label"></span>
+        </div>
+        <button type="submit">Create</button>
+    </form>
+
+    <div>
+        <a asp-page="/Index">Back to List</a>
+    </div>
+
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

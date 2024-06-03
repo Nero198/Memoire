@@ -1,0 +1,31 @@
+﻿@page "/Book/GetAll"
+@using dataAccess.Entities
+<h3>GetAll</h3>
+<Alert></Alert>
+@if (books.Any())
+{
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Release year</th>
+            <th>Publishing house</th>
+            <th>Author</th>
+            <th>Type</th>
+            <th></th>
+        </tr>
+        @foreach (Book book in books)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.ReleaseYear</td>
+                <td>@publishingHouses.First(x => x.Id == book.PublishingHouseId).Name</td>
+                <td>@persons.First(x => x.Id == book.PersonId).Lastname @persons.First(x => x.Id == book.PersonId).Firstname</td>
+                <td>@types.First(x => x.Id == book.TypeId).Label</td>
+                <td><button @onclick="() => GoTo((int)book.Id)"><i class="fa fa-search">Update</i></button></td>
+                <td><button @onclick="() => DeleteBook((int)book.Id)"><i class="fa fa-search">Delete</i></button></td>
+            </tr>
+        }
+    </table>
+}

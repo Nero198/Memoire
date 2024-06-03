@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Create a PublishingHouse</h2>
+  <form [formGroup]="publishingHouseForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" type="text" formControlName="name" class="form-control" />
+
+    </div>
+
+    <div class="form-group">
+      <label for="startYear">Start year</label>
+      <input id="startYear" type="number" formControlName="startYear" class="form-control" />
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

@@ -7,4 +7,5 @@ public class Person
     public string Firstname { get; set; }
     public DateTime DateOfBirth { get; set; }
     public bool IsMan { get; set; }
+    public virtual ICollection<Book>? Books { get; set; }
 }

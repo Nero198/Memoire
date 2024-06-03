@@ -1,14 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\POC\\Memoire\\",
+  "WorkspaceRootPath": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3D80F34-EF2A-49E2-9D7A-C611F5C6A116}|memoire_blazor\\memoire_blazor.csproj|c:\\poc\\memoire\\memoire_blazor\\pages\\person\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3D80F34-EF2A-49E2-9D7A-C611F5C6A116}|memoire_blazor\\memoire_blazor.csproj|solutionrelative:memoire_blazor\\pages\\person\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\book\\getall.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\book\\getall.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{525C7A8C-C659-45B4-A07E-9ED442E6388F}|memoire_api\\memoire_api.csproj|c:\\poc\\memoire\\memoire_api\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{525C7A8C-C659-45B4-A07E-9ED442E6388F}|memoire_api\\memoire_api.csproj|solutionrelative:memoire_api\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\book\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\book\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\book\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\book\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\book\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\book\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\book\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\book\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\publishinghouse\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\publishinghouse\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\publishinghouse\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\publishinghouse\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525C7A8C-C659-45B4-A07E-9ED442E6388F}|memoire_api\\memoire_api.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_api\\typecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525C7A8C-C659-45B4-A07E-9ED442E6388F}|memoire_api\\memoire_api.csproj|solutionrelative:memoire_api\\typecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\type\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\type\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\type\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\type\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\person\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\person\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\pages\\person\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\pages\\person\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\models\\type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\models\\type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|c:\\users\\nero\\desktop\\memoire\\memoire\\memoire_razor\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263F668B-0CD1-45AF-9680-405F60E77813}|memoire_razor\\memoire_razor.csproj|solutionrelative:memoire_razor\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,33 +69,202 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 202,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.razor",
-              "DocumentMoniker": "C:\\POC\\Memoire\\memoire_blazor\\Pages\\Person\\Create.razor",
-              "RelativeDocumentMoniker": "memoire_blazor\\Pages\\Person\\Create.razor",
-              "ToolTip": "C:\\POC\\Memoire\\memoire_blazor\\Pages\\Person\\Create.razor",
-              "RelativeToolTip": "memoire_blazor\\Pages\\Person\\Create.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T09:23:37.151Z",
+              "Title": "GetAll.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\GetAll.cshtml.cs",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Book\\GetAll.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\GetAll.cshtml.cs",
+              "RelativeToolTip": "memoire_razor\\Pages\\Book\\GetAll.cshtml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T12:24:09.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\POC\\Memoire\\memoire_api\\PersonController.cs",
-              "RelativeDocumentMoniker": "memoire_api\\PersonController.cs",
-              "ToolTip": "C:\\POC\\Memoire\\memoire_api\\PersonController.cs",
-              "RelativeToolTip": "memoire_api\\PersonController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAlwBsAAAAIAAAA",
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\Update.cshtml",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Book\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\Update.cshtml",
+              "RelativeToolTip": "memoire_razor\\Pages\\Book\\Update.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T12:21:16.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetAll.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\GetAll.cshtml",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Book\\GetAll.cshtml",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\GetAll.cshtml",
+              "RelativeToolTip": "memoire_razor\\Pages\\Book\\GetAll.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAawBsAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T12:17:45.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Book\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\Create.cshtml.cs",
+              "RelativeToolTip": "memoire_razor\\Pages\\Book\\Create.cshtml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwC4AAACxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T06:56:26.564Z",
+              "WhenOpened": "2024-06-03T12:14:29.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\Create.cshtml",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Book\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\Create.cshtml",
+              "RelativeToolTip": "memoire_razor\\Pages\\Book\\Create.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T12:14:26.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Update.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\Update.cshtml.cs",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Book\\Update.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Book\\Update.cshtml.cs",
+              "RelativeToolTip": "memoire_razor\\Pages\\Book\\Update.cshtml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T12:01:43.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\PublishingHouse\\Update.cshtml",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\PublishingHouse\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\PublishingHouse\\Update.cshtml",
+              "RelativeToolTip": "memoire_razor\\Pages\\PublishingHouse\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T11:57:00.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Update.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\PublishingHouse\\Update.cshtml.cs",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\PublishingHouse\\Update.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\PublishingHouse\\Update.cshtml.cs",
+              "RelativeToolTip": "memoire_razor\\Pages\\PublishingHouse\\Update.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:53:29.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TypeController.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_api\\TypeController.cs",
+              "RelativeDocumentMoniker": "memoire_api\\TypeController.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_api\\TypeController.cs",
+              "RelativeToolTip": "memoire_api\\TypeController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwDgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:51:45.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Update.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Person\\Update.cshtml.cs",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Person\\Update.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Person\\Update.cshtml.cs",
+              "RelativeToolTip": "memoire_razor\\Pages\\Person\\Update.cshtml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:49:15.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Person\\Update.cshtml",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Person\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Person\\Update.cshtml",
+              "RelativeToolTip": "memoire_razor\\Pages\\Person\\Update.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T11:49:11.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Type\\Update.cshtml",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Type\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Type\\Update.cshtml",
+              "RelativeToolTip": "memoire_razor\\Pages\\Type\\Update.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T11:46:37.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Update.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Type\\Update.cshtml.cs",
+              "RelativeDocumentMoniker": "memoire_razor\\Pages\\Type\\Update.cshtml.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Pages\\Type\\Update.cshtml.cs",
+              "RelativeToolTip": "memoire_razor\\Pages\\Type\\Update.cshtml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA7wBsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:46:10.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Type.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Models\\Type.cs",
+              "RelativeDocumentMoniker": "memoire_razor\\Models\\Type.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Models\\Type.cs",
+              "RelativeToolTip": "memoire_razor\\Models\\Type.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:39:16.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "memoire_razor\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\Nero\\Desktop\\Memoire\\Memoire\\memoire_razor\\Models\\Person.cs",
+              "RelativeToolTip": "memoire_razor\\Models\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:37:17.088Z",
               "EditorCaption": ""
             }
           ]

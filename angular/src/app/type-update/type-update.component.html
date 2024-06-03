@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Update Type</h2>
+  <form [formGroup]="typeForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="label">label</label>
+      <input id="label" type="text" formControlName="label" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>

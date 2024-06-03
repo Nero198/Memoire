@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+</head>
+<body>
+<article>
+    <form id="createPersonForm">
+		<input type="hidden" id="personId" name="id">
+            <div>
+                <label>Lastname:
+                    <input type="text" name="Lastname"/>
+                </label>
+            </div>
+            <div>
+                <label>Firstname:
+                    <input type="text" name="Firstname"/>
+                </label>
+            </div>
+            <div>
+                <label>Date of birth:
+                    <input type="date" name="DateOfBirth"/>
+                </label>
+            </div>
+            <div>
+                <label>Gender:
+                    <label><input type="radio" name="IsMan" value="true"/>Male</label>
+                    <label><input type="radio" name="IsMan" value="false"/>Female</label>
+                </label>
+            </div>
+            <div>
+                <button type="submit">Create</button>
+            </div>
+    </form>
+</article>
+<script>
+	document.getElementById('createPersonForm').addEventListener('submit', async function(event) {
+			event.preventDefault();
+
+			const form = event.target;
+			const response = await fetch('https://localhost:7009/api/person', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					Lastname: form.Lastname.value,
+					Firstname: form.Firstname.value,
+					DateOfBirth: form.DateOfBirth.value,
+					IsMan: form.IsMan.value ? true : false
+				})
+			});
+
+			console.log(response);
+			if (!response.ok) {
+				throw new Error('Network response was not ok');
+			}
+			alert("Create with sucess");
+		});
+	</script>
+</body>
+</html>

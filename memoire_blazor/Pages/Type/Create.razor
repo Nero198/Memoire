@@ -1,0 +1,9 @@
+﻿@page "/Type/Create"
+<h3>Create</h3>
+<EditForm Model="type" OnSubmit="() => PostData()" FormName="Type">
+    <div>
+        Label:
+        <InputText @bind-Value="type.Label"/>
+    </div>
+    <button type="submit">Submit</button>
+</EditForm>
